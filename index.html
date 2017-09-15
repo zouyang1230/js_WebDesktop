@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+<meta charset="utf-8" />
+<title>Web Desktop</title>
+<meta name="author"  content="zouyang qq7012490">
+<link rel="shortcut icon" href="images/icon.ico" />
+<link rel="stylesheet" type="text/css" href="css/indexcss.css">
+<noscript> 
+	<div style="width:100%;height:100%;background:#282828;color:white;text-align:center;position:absolute;top:0;left:0;z-index:50000;">
+		<p style="margin-top:50px;font-size:26px;">温馨提示：本站采用大量javascript脚本、前端最新技术CSS3编写大量特效</p>
+		<p style="margin-top:20px;font-size:26px;">为获得最好浏览体验</p>
+		<p style="margin-top:20px;font-size:26px;">请您启用浏览器脚本功能 并 使用最新版主流浏览器进行访问^_^</p>
+		<div style="margin-top:20px;font-size:26px;">(点击如下 苹果、火狐、谷歌、Opera浏览器图标跳转浏览器下载)</div>
+		<div style="margin-top:50px;">
+			<a href="http://www.apple.com/safari" target="_blank"><img src="images/safari.png" alt="safari" /></a>
+			<a href="http://www.firefox.com/" target="_blank"><img src="images/firefox.png" alt="safari" /></a>
+			<a href="http://www.baidu.com/s?wd=chrome&ie=UTF-8" target="_blank"><img src="images/chrome.png" alt="chrome" /></a>
+			<a href="http://www.opera.com/zh-cn" target="_blank"><img src="images/opera.png" alt="safari" /></a>
+		</div>
+	</div>
+</noscript>
+<script type="text/javascript" src="js/Modernizr.js"></script>
+<script type="text/javascript">
+if (!to3d() || document.documentMode == 10 || document.documentMode == 11)	/*把IE10 11也干掉了，同时不支持3D的也干掉*/
+{ 
+	window.location="error.html";
+}
+
+function to3d()
+{
+	if(!Modernizr.csstransforms3d)
+	{
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+}
+</script>
+<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="js/tween.js" ></script>
+<script type="text/javascript" src="js/move.js"></script>
+<script type="text/javascript" src="js/index.js" ></script>
+<script type="text/javascript" src="js/explode.js" ></script>
+</head>
+<body>
+
+<div id='container'>
+	<div id='preloader' ></div>
+	<div  id='bg' >
+		<!-- <img src='images/bg1.jpg'  />   action1  欠妥-->
+	</div>
+	
+	<div id='left_menu'>
+		<div class="web_main_menu_cn">
+			<ul class="clear" id="web_menu">
+				<li title="视频">
+					<a href="javascript:;" ><img src="images/big0.png"  width="35" height="35" alt="腾讯视频"></a>
+				</li>
+				<li title="QQ农场">
+					<a href="javascript:;"><img src="images/big1.png"  width="35" height="35"  alt="QQ农场"></a>
+				</li>
+				<li title="QQ">
+					<a href="javascript:;"><img src="images/big2.png"  width="35" height="35" alt="QQ"></a>
+				</li>
+				<li title="网易邮箱">
+					<a href="javascript:;"><img src="images/d_11.png"  width="35" height="35" alt="网易邮箱"></a>
+				</li>
+				<li title="QQ邮箱">
+					<a href="javascript:;"><img src="images/big4.png"  width="35" height="35" alt="QQ邮箱"></a>
+				</li>
+				<li title="腾讯微博">
+					<a href="javascript:;"><img src="images/big5.png"  width="35" height="35" alt="腾讯微博"></a>
+				</li>
+			</ul>
+		</div>
+		
+		<div id='left_menu_bottom' >
+			<div id='div1' >网&nbsp;&nbsp;站</div>
+			<div id='div2' >简&nbsp;&nbsp;介</div>
+			<div id='div3' ><a href='intro.html' target="_blank"><img src='images/left5.png' /></a></div>
+		</div>
+	</div>
+	
+	<div id='top_menu' class='clear'>
+		<div id='top_menu_1'><a href='javascript:;'></a></div>
+		<div id='top_menu_2'>
+			<ul class='nav'>
+				<li>
+					<a class='btn ' href="#" >
+						<span>1</span>
+						<span  class='btn_span2 active'>1</span>
+					</a>
+				</li>
+				<li>
+					<a class='btn'  href="#">
+						<span>2</span>
+						<span  class='btn_span2'>2</span>
+					</a>
+				</li>
+				<li>
+					<a class='btn'  href="#">
+						<span>3</span>
+						<span  class='btn_span2'>3</span>
+					</a>
+				</li>
+				<li>
+					<a class='btn'  href="#">
+						<span>4</span>
+						<span  class='btn_span2'>4</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id='top_menu_3'>
+			<a id='btn_explode_left' class='hl' href='javascript:;'>左</a>
+			<a id='btn_explode_right' class='hr' href='javascript:;'>右</a>
+		</div>
+	</div>
+	
+
+	<div	id='main_content'>
+			<ul style='left:0;top:0;' >
+				<li style='left:0;top:0;'>
+					<a href='#' class='main_content_a'>
+						<img src='images/d_7.png'  />
+						<p class="qinxian" title="百度一下">百度一下</p>
+					</a>
+				</li>
+				<li style='left:0;top:117px;'>
+					<a href='#' class='main_content_a'>
+						<img src='images/d_8.png'  />
+						<p class="qinxian" title="英雄联盟">英雄联盟</p>
+					</a>
+				</li>
+				<li style='left:0;top:234px;'>
+					<a href='#' class='main_content_a'>
+						<img src='images/d_wjj.png'  />
+						<p class="qinxian" title="文件夹">文件夹</p>
+					</a>
+				</li>
+				<li style='left:0;top:351px;'>
+					<a href='#' class='main_content_a'>
+						<img src='images/d_10.png'  />
+						<p class="qinxian" title="淘宝网">淘宝网</p>
+					</a>
+				</li>
+				<li style='left:117px;top:0;'>
+					<a href='#' class='main_content_a'>
+						<img src='images/d_1.png'  />
+						<p class="qinxian" title="腾讯首页">腾讯首页</p>
+					</a>
+				</li>
+				<li style='left:117px;top:117px;'>
+					<a href='#' class='main_content_a'>
+						<img src='images/d_11.png'  />
+						<p class="qinxian" title="网易邮箱">网易邮箱</p>
+					</a>
+				</li>
+				<li style='left:117px;top:234px;'>
+					<a href='#' class='main_content_a'>
+						<img src='images/d_wjj.png'  />
+						<p class="qinxian" title="文件夹">文件夹</p>
+					</a>
+				</li>
+			</ul>
+			
+			<ul style='left:-1000px;top:0;'>
+				<li style='left:0;top:0;'>
+					<a href='#' class='main_content_a'>
+						<img src='images/d_wjj.png'  />
+						<p class="qinxian" title="文件夹">文件夹</p>
+					</a>
+				</li>
+				<li style='left:0;top:117px;'>
+					<a href='#' class='main_content_a'>
+						<img src='images/d_wjj.png'  />
+						<p class="qinxian" title="文件夹">文件夹</p>
+					</a>
+				</li>
+				<li style='left:0;top:234px;'>
+					<a href='#' class='main_content_a'>
+						<img src='images/d_11.png'  />
+						<p class="qinxian" title="网易邮箱">网易邮箱</p>
+					</a>
+				</li>
+			</ul>
+			
+			<ul style='left:-1000px;top:0;'>
+				<li style='left:0;top:0;'>
+					<a href='#' class='main_content_a'>
+						<img src='images/d_11.png'  />
+						<p class="qinxian" title="网易邮箱">网易邮箱</p>
+					</a>
+				</li>
+				<li style='left:0;top:117px;'>
+					<a href='#' class='main_content_a'>
+						<img src='images/d_wjj.png'  />
+						<p class="qinxian" title="文件夹">文件夹</p>
+					</a>
+				</li>
+				<li style='left:0;top:234px;'>
+					<a href='#' class='main_content_a'>
+						<img src='images/d_wjj.png'  />
+						<p class="qinxian" title="文件夹">文件夹</p>
+					</a>
+				</li>
+				<li style='left:0;top:351px;'>
+					<a href='#' class='main_content_a'>
+						<img src='images/d_wjj.png'  />
+						<p class="qinxian" title="文件夹">文件夹</p>
+					</a>
+				</li>
+				<li style='left:117px;top:0;'>
+					<a href='#' class='main_content_a'>
+						<img src='images/d_wjj.png'  />
+						<p class="qinxian" title="文件夹">文件夹</p>
+					</a>
+				</li>
+			</ul>
+			
+			<ul style='left:-1000px;top:0;'>
+				<li style='left:0;top:0;'>
+					<a href='#' class='main_content_a'>
+						<img src='images/d_wjj.png'  />
+						<p class="qinxian" title="文件夹">文件夹</p>
+					</a>
+				</li>
+				<li style='left:0;top:117px;'>
+					<a href='#' class='main_content_a'>
+						<img src='images/d_11.png'  />
+						<p class="qinxian" title="网易邮箱">网易邮箱</p>
+					</a>
+				</li>
+			</ul>
+	</div> 
+	
+<!-- 开始做右上角 个人简介 -- 明天接着整>
+<!-- 遮罩 -->
+	<div id="zhezhao" class="zhezhao" style="display: none; ">
+		<img  src="images/zhezhao.png" />
+	</div>
+	
+	<div  id='zouyangbox' style='right: 63px; top: 33px;'>
+		<span	class='close' style='display:none'></span>			<!-- 制作关闭按钮 -->
+		<img id="zouyangbox_img" class="zouyangbox_img"  src="images/zouyang.png" />
+		<div id='box1' style='display: block; height: 0px; opacity: 0;'><img src="images/me2.png"  alt="个人形象照" /></div>
+		<div id='box2' style='display: block; width: 0px; opacity: 0;'>
+			<h1>专 业 技 能</h1>
+			<ul id="list">
+				<li>1、HTML：1234567891012345678910123456</li>  
+				<li>2、HTML5：123456789101234567891012345</li>
+				<li>3、CSS：12345678910123456789101234567</li>
+				<li>4、CSS3：1234567891012345678910123456</li>
+			</ul>
+		</div>
+		<div id='box3' style='display: block; height: 0px; opacity: 0;'>
+			<ul id="list3">
+				<li>5、javascript：12345678910123456789101</li>
+				<li>6、jQuery：12345678910123456789101234</li>
+				<li>7、PHP：12345678910123456789101234567</li>
+				<li>1234567891012345678910123456712345678</li>
+				<li>注重团队协作 善良 乐观 乐于助人</li>
+			</ul>
+		</div>
+		<div id='box4' style='display: block; width: 0px; opacity: 0;'>
+			<ul id="list4">
+				<li>男 | 118岁（1000/12/30）毕业于:大学大学大学</li>
+				<li>居住地：四川-成都</li>
+				<li>电    话：134 3890 7533</li>
+				<li>E-mail：yangzoucn@163.com</li>
+			</ul>
+			<h1> 姓名：邹 阳 （Luca）</h1>
+		</div>
+	</div>
+
+<!-- 框架 -->
+	<div id="frameweb">
+		<div id='frameweb_top'>
+			<p></p>
+			<div id='frameweb_top_btn'>
+				<a id='max' href='javascript:;'  ></a>
+				<a id='close' href='javascript:;'  ></a>
+			</div>
+		</div>
+		<div  id='frameweb_bottom' >
+			<iframe src=""  ></iframe>
+		</div>
+	</div>
+	
+	<!-- 时钟 -->
+	<div id="shizhong" >
+		<div id="timebox" >1</div>
+		<div id="daybox">2</div>
+		<div id="datebox">3</div>
+	</div>
+	<!-- 右键菜单 -->
+	<div id="windowmenu">
+		<ul>
+			<li> 右键示例菜单</li>
+			<li> 右键示例菜单</li>
+			<li> 右键示例菜单</li>
+			<li> 右键示例菜单</li>
+			<li> 右键示例菜单</li>
+			<li> 右键示例菜单</li>
+			<li> 右键示例菜单</li>
+		</ul>
+	</div>
+
+</div>   <!-- 最外层container结束 -->
+
+
+</body>
+</html>

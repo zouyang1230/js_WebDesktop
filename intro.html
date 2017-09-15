@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="author"  content="zouyang qq7012490">
+<link rel="shortcut icon" href="images/icon.ico" />
+<title>Web Desktop网站简介</title>
+<link href="css/introcss.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/tween.js"></script>
+<script type="text/javascript" src="js/move.js"></script>
+<script type="text/javascript" src="js/intro.js"></script>
+</head>
+<body>
+  <div id="topContainer">
+	<div class="juzhong" id="topContainer_box"  >
+		<p id="topContainer_box_1">Web Desktop</p>
+		<p id="topContainer_box_2">The brief introduction</p>
+	</div>
+  </div>
+  
+  <div id="bottomContainer">
+  
+	<div class="juzhong" id="bottomContainer_box1" >
+		<p>网站介绍</p>
+	</div>
+	
+	<div class="juzhong" id="bottomContainer_box2" >
+		<ul>
+			<li>Web Desktop是作者闲暇时完成的demo，并借鉴业内一些常用公开的方法和函数。</li>
+			<li>网站脚本大部分采用原生javascript，配合jquery、css3，封装了自己常用的js库，命名为move.js。</li>
+			<li>作品做了很多交互和体验上的思考与设计，实现了一些相应的功能。</li>
+			<li>完成这个作品是一个开心的过程，每晚入睡都期待第二天早点到来，好继续攻关。</li>
+			<li>期间遇到了很多css和js细节上的问题，反复调试修复了BUG，如有不足之处还请多多谅解与指教。</li>
+		</ul>
+	</div>
+	
+	<div class="juzhong" id="bottomContainer_box3" >
+		<p>主要功能简介</p>
+	</div>
+	
+	<div class="juzhong" id="bottomContainer_box4" >
+		<ul>
+			<li>1、设置网站ico图标、设置了浏览器能力检测、脚本检测，并视情况提示升级(<a href="error.html" target="_blank">点此查看效果</a>)</li>
+			<li>2、左侧菜单：</li>
+			<li>背景透明png，针对不同分辨率浏览器进行居中定位；</li>
+			<li>css3圆角边框、边框阴影；</li>
+			<li>鼠标移入---图标跟随鼠标变化size；</li>
+			<li>点击图标打开对应链接。</li>
+			<li>3、顶部菜单：</li>
+			<li>居中顶部显示，针对不同分辨率浏览器进行居中定位；</li>
+			<li>css3旋转图标、3D翻转按钮、背景切换按钮、圆角边框、边框阴影；</li>
+			<li>背景图片采用css预加载优化</li>
+			<li>点击3D翻转按钮---切换桌面图标区域（图标切换采用纵向移动淡出，横向移入淡入效果；</li>
+			<li>滚动鼠标滚轮---亦可切换图标区域；</li>
+			<li>移入移出背景切换按钮---改变按钮样式；点击按钮---切换背景（背景采用碎片效果淡出视线）。</li>
+			<li>4、桌面图标：</li>
+			<li>布局采用4个ul，显示当前一个；</li>
+			<li>图标采用统一大小png图片，设置圆角边框、边框阴影；</li>
+			<li>移入移出图标---透明度改变，字体颜色改变；</li>
+			<li>鼠标滑过图标文字---动画弹动，结合tween.js；</li>
+			<li>点击图标---在内联框架中打开对应链接</li>	
+			<li>拖拽图标----拖动并松开，图标会回原位，修复了点击打开框架跟拖动的冲突。</li>
+			<li>5、内联框架：</li>	
+			<li>框架标题显示对应图标所示标题，以达最佳浏览体验；；</li>
+			<li>采用淡入淡出、缓速运动显示隐藏高度、平滑过度到最大化最小化；</li>	
+			<li>设计最大化按钮、最小化按钮，移入移出按钮---样式效果，按钮会跟随框架当前状态显示为最大还是最小化。</li>
+			<li>6、右上角“个人信息”：</li>	
+			<li>点击“个人信息”---显示半透明图片并设置其zIndex产生遮罩效果，“个人信息”缓速运动居中显示；</li>
+			<li>内容分4个小div链式运动显示，最后显示关闭按钮；</li>	
+			<li>内容文字鼠标滑过---文字弹动，采用了tween.js；</li>
+			<li>点击关闭---链式运动回到初始位置。</li>	
+			<li>7、桌面日期时钟：</li>
+			<li>跟随系统时间每一秒更新变化一次；</li>	
+			<li>拖拽时钟---可拖到桌面任意位置，并优化不能被拖出屏幕；</li>
+			<li>8、鼠标右键菜单：</li>	
+			<li>首先阻止原有默认右键菜单---contextmenu事件</li>	
+			<li>显示自定义的一个菜单，并设置鼠标移入菜单改变背景效果</li>
+			<li>在桌面上任意右击---弹出菜单，菜单位置跟随鼠标位置</li>	
+			<li>优化菜单显示位置不能移出屏幕</li>
+			<li></li>
+			<li>其他一些小细节不再赘述，非常感谢您花费宝贵时间浏览此作品！不足之处还请您谅解与指正。</li>	
+		</ul>
+	</div>
+  </div>
+  
+  	<div id="author" >
+		<div class="juzhong">
+			<p>作者：邹阳 | QQ:7012490 | Tel:134 3890 7533 | E-mail:yangzoucn@163.com</p>
+		</div>
+	</div>
+  
+
+</body>
+</html>

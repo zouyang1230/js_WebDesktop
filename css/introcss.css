@@ -1,0 +1,63 @@
+﻿@charset "utf-8";
+/* CSS Document */
+h1,h2,h3,h4,h5,h6,p,ol,ul,li,dl,dd,textarea,form,input,select,body{margin:0;padding:0;font-size:16px;font-family: '微软雅黑',Tahoma,Arial,sans-serif;}
+em{font-style:normal;}
+li{list-style:none;}
+a{text-decoration:none;outline: medium none;}
+a:link{color:#fff;}
+a:visited{color:#fff;}
+a:hovor{color:#fff;}
+a:active{color:#fff;}
+html{width:100%;height:100%;}
+body{width:100%;height:100%;position:relative;background:#242424}	
+.juzhong {margin:0 auto;}
+@font-face {    
+  font-family: 'YouYuan';    
+  src:url(../css/youyuan.ttf); /* IE */  
+  src:local('youyuan Regular'),
+  local('youyuan'),
+  url(../css/youyuan.ttf)  format("truetype"); 
+} 
+/* css reset */
+#topContainer {width:100%;height:264px;background:#242424;border-bottom:1px solid black;}
+#topContainer_box {width:810px;height:264px;padding:1px;position:relative;}
+#topContainer_box_1{position:absolute;top:65px;left:130px;color:#a0e311;font-size:90px;font-family: Tahoma,Arial,sans-serif;
+text-shadow:5px 8px 5px #000;
+-moz-text-shadow:5px 8px 5px #000;
+-webkit-text-shadow:5px 8px 5px #000;
+-o-text-shadow:5px 8px 5px #000;
+}
+#topContainer_box_2{position:absolute;top:190px;left:320px;color:#c7c7c7;font-size:18px;font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;text-shadow:5px 5px 5px #000;
+text-shadow:3px 5px 3px #000;
+-moz-text-shadow:3px 5px 3px #000;
+-webkit-text-shadow:3px 5px 3px #000;
+-o-text-shadow:3px 5px 3px #000;
+}
+
+#bottomContainer {width:100%;height:1691px;background:#282828;}   /*内容大框*/
+
+#bottomContainer_box1 {width:810px;height:65px;position:relative;}
+#bottomContainer_box1 p { font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;font-size:30px;color:#888888;position:absolute;bottom:10px;}
+
+#bottomContainer_box2 {width:798px;height:178px;position:relative;padding-left:10px;
+border:1px solid black;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+-o-border-radius:5px;
+}
+#bottomContainer_box2 ul li{color:#fff;height:35px;line-height:35px;position:relative;}
+#bottomContainer_box2 ul li span{width:16px;height:16px;line-height:16px;}			/* 琴弦 */
+#bottomContainer_box3 {width:810px;height:65px;position:relative;}
+#bottomContainer_box3 p { font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;font-size:30px;color:#888888;position:absolute;bottom:10px;}
+#bottomContainer_box4 {width:798px;height:1370px;position:relative;border:1px solid black;padding-left:10px;padding-top:10px;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+-o-border-radius:5px;
+}
+#bottomContainer_box4 ul li{color:#fff;height:35px;line-height:35px;}
+#author {width:100%;height:65px;background:#242424;border-top:1px solid black;}
+#author div {width:810px;height:65px;position:relative;}
+#author div  p {width:810px;height:65px;line-height:65px;text-align:center;color:#fff;}
+
